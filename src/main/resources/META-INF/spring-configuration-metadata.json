@@ -1,0 +1,10 @@
+{
+  "properties": [
+    {
+      "name": "spring.web.excel.enabled",
+      "type": "java.lang.Boolean"
+    }
+  ]
+}
+
+
