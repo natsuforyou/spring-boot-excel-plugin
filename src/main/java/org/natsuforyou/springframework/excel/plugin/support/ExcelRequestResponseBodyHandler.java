@@ -65,6 +65,7 @@ public class ExcelRequestResponseBodyHandler implements HandlerMethodArgumentRes
 
     @Override
     public void handleReturnValue(Object returnValue, MethodParameter returnType, ModelAndViewContainer mavContainer, NativeWebRequest webRequest) throws Exception {
+        mavContainer.setRequestHandled(true);
         HttpServletResponse servletResponse = webRequest.getNativeResponse(HttpServletResponse.class);
 
         ExcelResponseBody annotation = returnType.getMethodAnnotation(ExcelResponseBody.class);
